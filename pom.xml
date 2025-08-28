@@ -22,20 +22,12 @@
       <configuration>
         <source>17</source>
         <target>17</target>
-      </configuration>
-    </plugin>
-
-    <!-- Forked Compiler Configuration -->
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.8.1</version>
-      <configuration>
-        <fork>true</fork>
+		<fork>true</fork>
         <executable>${JAVA_HOME}/bin/javac</executable>
         <compilerArgs>
           <arg>--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
         </compilerArgs>
+      </configuration>
       </configuration>
     </plugin>
 
